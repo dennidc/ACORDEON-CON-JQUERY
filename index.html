@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ebd543e82.js" crossorigin="anonymous"></script>
+    <title>Tarea 5</title>
+</head>
+<body>
+<header>
+    <br>
+</header>
+<section class="contenedor_principal">
+
+    <section class="ancho faq">
+        <h1>Frequently Asked Questions</h1>
+        <br>
+        <br>
+        <br>
+        <div class="acordeon_titulo ">
+            <span class="icon"></span>
+            <h3>Do you provide any scripts with your templates?</h3>
+        </div>
+        <article class="acordeon_contenido2">
+            <p>
+                Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.
+            </p>
+        </article>
+        <br>
+        <div class="acordeon_titulo ">
+            <span class="icon"></span>
+            <h3>What do i receive when I order a template?</h3>
+        </div>
+        <article class="acordeon_contenido2 ">
+            <p>
+                After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.
+            </p>
+        </article>
+        <br>
+        <div class="acordeon_titulo ">
+            <span class="icon"></span>
+            <h3>In what formats are your templates available?</h3>
+        </div>
+        <article class="acordeon_contenido2 ">
+                <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+        </article>
+        <br>
+        <div class="acordeon_titulo ">
+            <span class="icon"></span>
+            <h3>What am i allowed to do with the templates?</h3>
+        </div>
+        <article class="acordeon_contenido2 ">
+                <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals.</p>
+        </article>
+    </section>
+
+    <section class="skills">
+        <h1>Skills</h1>
+        <br>
+        <br>
+        <div class="skill">
+            <span class="skill-name">Branding</span>
+            <span class="skill-percentage">90%</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%; background-color: blue;"></div>
+            </div>
+        </div>
+        <br>
+        <div class="skill">
+            <span class="skill-name">Web Design</span>
+            <span class="skill-percentage">65%</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 65%; background-color: gold;"></div>
+            </div>
+        </div>
+        <br>
+        <div class="skill">
+            <span class="skill-name">Copywriting</span>
+            <span class="skill-percentage">100%</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%; background-color: deeppink;"></div>
+            </div>
+        </div>
+        <br>
+        <div class="skill">
+            <span class="skill-name">Video Production</span>
+            <span class="skill-percentage">75%</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%; background-color: #3CC985;"></div>
+            </div>
+        </div>
+</section>
+
+<script>
+    $(document).ready(function() {
+    $('.acordeon_titulo').click(function() {
+        $(this).toggleClass('active'); // Añade o quita la clase 'active'
+        $(this).next('.acordeon_contenido2').slideToggle(); // Muestra u oculta el contenido
+    });
+});
+</script>
+</body>
+</html>

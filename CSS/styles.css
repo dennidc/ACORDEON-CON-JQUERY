@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+header{
+    background-color: #f0eeee;
+    height: 50px;
+}
+
+
+.skills{
+    width: 50%;
+    padding: 5%;
+}
+
+.faq{
+    padding: 5%;
+    width: 50%;
+    margin: auto;
+}
+p{
+    margin-bottom: 10px;
+    width: 75%;
+    padding: 10px 35px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+h3{
+    font-weight: 350;
+    font-size: 20px;
+}
+.contenedor_principal{
+    display: flex;
+}
+
+.acordeon_titulo{
+    display: flex;
+    gap: 10px;
+}
+
+.acordeon_contenido2{
+display: none;
+}
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #2838EF;
+    border-radius: 4px;
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Estilo para el símbolo "-" cuando el acordeón está abierto */
+.acordeon_titulo.active .icon::before {
+    content: "-";
+}
+
+/* Estilo para el símbolo "+" cuando el acordeón está cerrado */
+.acordeon_titulo .icon::before {
+    content: "+";
+}
+
+.Branding{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: 400;
+}
+
+.skill-percentage {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 2px;
+    background-color: #f3f3f3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.active{
+    color: #2838EF;
+}
+
+@media screen and (max-width: 768px){
+
+    .contenedor_principal{
+        flex-direction: column;
+    }
+    .skills{
+        margin: auto;
+    }
+}
